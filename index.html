@@ -3,15 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bilal — Mobile Application Architect</title>
-  <meta name="description" content="Portfolio of Bilal, Mobile Application Architect (Android) with 12+ years experience." />
+  <title>Ahmad Bilal Goraya— Mobile Application Architect</title>
+  <meta name="description" content="Portfolio of Ahmad Bilal Goraya—, Mobile Application Architect (Android) with 12+ years experience." />
   <style>
     :root{
+      /* Light theme (default) */
+      --bg:#ffffff; --card:#ffffff; --muted:#475569; --text:#0f172a; --accent:#2563eb; --pill:#f1f5f9;
+      --link:#2563eb; --ok:#16a34a; --chip:#f8fafc; --border:#e5e7eb; --shadow:0 8px 24px rgba(2,6,23,.08);
+    }
+    [data-theme="dark"]{
+      /* Dark theme overrides */
       --bg:#0b1020; --card:#121830; --muted:#9fb3c8; --text:#e8eef6; --accent:#7dd3fc; --pill:#1e293b;
-      --link:#93c5fd; --ok:#22c55e; --chip:#0f172a; --shadow:0 10px 30px rgba(2,6,23,.4);
+      --link:#93c5fd; --ok:#22c55e; --chip:#0f172a; --border:#22304f; --shadow:0 10px 30px rgba(2,6,23,.4);
     }
     *{box-sizing:border-box}
-    html,body{margin:0; padding:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial; background:linear-gradient(180deg,#0b1020,#0e1326 40%,#0b1020); color:var(--text);}
+    html,body{margin:0; padding:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial; background:linear-gradient(180deg,#ffffff,#f8fafc 40%,#ffffff); color:var(--text);}
     a{color:var(--link); text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:1080px; margin:auto; padding:28px}
@@ -21,34 +27,14 @@
     .title h1{margin:0; font-size:clamp(26px,4vw,40px)}
     .title p{margin:6px 0 0; color:var(--muted)}
     .cta{display:flex; gap:10px; flex-wrap:wrap}
-    .btn{background:linear-gradient(135deg,#38bdf8,#2563eb); color:#071426; padding:10px 14px; border-radius:12px; font-weight:700; border:none; cursor:pointer}
-    .btn.secondary{background:#0f172a; color:var(--text); outline:1px solid #1f2a44}
+    .btn{background:linear-gradient(135deg,#38bdf8,#2563eb); color:#ffffff; padding:10px 14px; border-radius:12px; font-weight:700; border:none; cursor:pointer}
+    .btn.secondary{background:var(--chip); color:var(--text); outline:1px solid var(--border)}
     main{display:grid; grid-template-columns: 1.1fr .9fr; gap:24px; margin-top:26px}
     @media (max-width: 900px){ main{grid-template-columns: 1fr} }
-    section{background:rgba(17,24,39,.6); border:1px solid #1f2a44; border-radius:20px; padding:20px; box-shadow:var(--shadow)}
+    section{background:var(--card); border:1px solid var(--border); border-radius:20px; padding:20px; box-shadow:var(--shadow)}
     h2{margin:0 0 10px; font-size:22px}
     .pills{display:flex; flex-wrap:wrap; gap:8px}
-    .pill{background:linear-gradient(180deg,#0f172a,#0b1222); border:1px solid #22304f; padding:6px 10px; border-radius:999px; color:#cfe6ff; font-size:13px}
-    .grid{display:grid; gap:14px}
-    .card{background:rgba(10,15,30,.6); border:1px solid #22304f; border-radius:16px; padding:14px}
-    .card h3{margin:0; font-size:18px}
-    .meta{color:var(--muted); font-size:13px; margin:6px 0 0}
-    .list{display:grid; gap:8px; padding-left:18px}
-    .list li{margin:0}
-    .proj{display:grid; gap:12px}
-    .proj a{display:block; background:rgba(2,6,23,.6); border:1px solid #22304f; padding:12px; border-radius:14px}
-    .two{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-    @media (max-width: 700px){ .two{grid-template-columns:1fr} }
-    footer{color:var(--muted); text-align:center; padding:28px 0}
-    .tag{display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; background:#0a1224; border:1px solid #24304d; color:#cfe6ff; font-size:12px}
-    .row{display:flex; gap:10px; flex-wrap:wrap}
-    .kvs{display:grid; grid-template-columns:1fr 1fr; gap:10px}
-    @media (max-width: 600px){ .kvs{grid-template-columns:1fr} }
-    .kv{background:rgba(2,6,23,.6); border:1px solid #22304f; border-radius:14px; padding:12px}
-    .kv strong{display:block; font-size:22px}
-    .ok{color:#86efac}
-    .divider{height:1px; background:#22304f; margin:8px 0 14px}
-  </style>
+    .pill{background:var(
 </head>
 <body>
   <div class="wrap">
